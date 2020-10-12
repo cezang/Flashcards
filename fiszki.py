@@ -163,7 +163,7 @@ class Window_afc(tk.Toplevel):
        global dt1
        if self.slowko_state == "PL":
 
-           slowko_1 = self.slowko.get()
+           slowko_1 = self.slowko.get().strip()
            self.f_slowo = slowko_1[22:]
 
            if len(self.f_slowo)==0:
@@ -175,7 +175,7 @@ class Window_afc(tk.Toplevel):
            self.slowko.delete(0, tk.END)
            self.slowko.insert(0, "Podaj angielskie słówko: ")
        elif self.slowko_state == "EN":
-           slowko_2 = self.slowko.get()
+           slowko_2 = self.slowko.get().strip()
            self.slowko.delete(0, tk.END)
            self.s_slowo = slowko_2[25:]
            if len(self.s_slowo)==0:
@@ -255,7 +255,7 @@ class Window_fc1(tk.Toplevel):
        global dt2
        try:
            en = dt1['Tlumaczenie'][0]
-           x = self.tlumaczenie.get()
+           x = self.tlumaczenie.get().strip()
            if x.lower() == en.lower():
                dt2 = dt2.append(dt1.loc[0, :])
                dt1 = dt1.drop(0)
@@ -368,7 +368,7 @@ class Window_fc2(tk.Toplevel):
        global dt3
        try:
            en = dt2['Tlumaczenie'][0]
-           x = self.tlumaczenie.get()
+           x = self.tlumaczenie.get().strip()
            if x.lower() == en.lower():
                dt3 = dt3.append(dt2.loc[0, :])
                dt2 = dt2.drop(0)
@@ -479,7 +479,7 @@ class Window_fc3(tk.Toplevel):
        global dt4
        try:
            en = dt3['Tlumaczenie'][0]
-           x = self.tlumaczenie.get()
+           x = self.tlumaczenie.get().strip()
            if x.lower() == en.lower():
                dt4 = dt4.append(dt3.loc[0, :])
                dt3 = dt3.drop(0)
@@ -590,7 +590,7 @@ class Window_fc4(tk.Toplevel):
        global dt5
        try:
            en = dt4['Tlumaczenie'][0]
-           x = self.tlumaczenie.get()
+           x = self.tlumaczenie.get().strip()
            if x.lower() == en.lower():
                dt5 = dt5.append(dt4.loc[0, :])
                dt4 = dt4.drop(0)
@@ -699,7 +699,7 @@ class Window_fc5(tk.Toplevel):
        global dt5
        try:
            en = dt5['Tlumaczenie'][0]
-           x = self.tlumaczenie.get()
+           x = self.tlumaczenie.get().strip()
            if x.lower() == en.lower():
                dt5 = dt5.drop(0)
                dt5.reset_index(inplace=True, drop=True)

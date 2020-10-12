@@ -247,7 +247,7 @@ class Window_fc1(tk.Toplevel):
        # exit button
        self.exit_button = tk.Button(self.master, text='Powrót', command=self.master.destroy,
                             padx=60)
-       self.exit_button.grid(row=5, column=0, pady=30, sticky=W + E, padx=30)
+       self.exit_button.grid(row=5, column=0, pady=10, sticky=W + E, padx=30)
 
     #funkcje
    def check_click(self, event=None):
@@ -285,7 +285,7 @@ class Window_fc1(tk.Toplevel):
 
                #update wynik
                self.wynik.pack_forget()
-               self.var_dobrze_zle = "Zle"
+               self.var_dobrze_zle = "Zle - poprawne tlumacznie to:\n{}".format(en)
                self.wynik = tk.Label(self.frame3, text=self.var_dobrze_zle)
                self.wynik.pack()
                #update slowko
@@ -359,7 +359,7 @@ class Window_fc2(tk.Toplevel):
        # exit button
        self.exit_button = tk.Button(self.master, text='Powrót',
                                     command=self.master.destroy, padx=60)
-       self.exit_button.grid(row=5, column=0, pady=20, sticky=W + E, padx=30)
+       self.exit_button.grid(row=5, column=0, pady=10, sticky=W + E, padx=30)
 
        # funkcje
 
@@ -398,7 +398,7 @@ class Window_fc2(tk.Toplevel):
 
                # update wynik
                self.wynik.pack_forget()
-               self.var_dobrze_zle = "Zle"
+               self.var_dobrze_zle = "Zle - poprawne tlumacznie to:\n{}".format(en)
                self.wynik = tk.Label(self.frame3, text=self.var_dobrze_zle)
                self.wynik.pack()
                # update slowko
@@ -470,7 +470,7 @@ class Window_fc3(tk.Toplevel):
        # exit button
        self.exit_button = tk.Button(self.master, text='Powrót',
                                     command=self.master.destroy, padx=60)
-       self.exit_button.grid(row=5, column=0, pady=30, sticky=W + E, padx=30)
+       self.exit_button.grid(row=5, column=0, pady=10, sticky=W + E, padx=30)
 
        # funkcje
 
@@ -509,7 +509,7 @@ class Window_fc3(tk.Toplevel):
 
                # update wynik
                self.wynik.pack_forget()
-               self.var_dobrze_zle = "Zle"
+               self.var_dobrze_zle = "Zle - poprawne tlumacznie to:\n{}".format(en)
                self.wynik = tk.Label(self.frame3, text=self.var_dobrze_zle)
                self.wynik.pack()
                # update slowko
@@ -581,7 +581,7 @@ class Window_fc4(tk.Toplevel):
        # exit button
        self.exit_button = tk.Button(self.master, text='Powrót',
                                     command=self.master.destroy, padx=60)
-       self.exit_button.grid(row=5, column=0, pady=30, sticky=W + E, padx=30)
+       self.exit_button.grid(row=5, column=0, pady=10, sticky=W + E, padx=30)
 
        # funkcje
 
@@ -620,7 +620,7 @@ class Window_fc4(tk.Toplevel):
 
                # update wynik
                self.wynik.pack_forget()
-               self.var_dobrze_zle = "Zle"
+               self.var_dobrze_zle = "Zle - poprawne tlumacznie to:\n{}".format(en)
                self.wynik = tk.Label(self.frame3, text=self.var_dobrze_zle)
                self.wynik.pack()
                # update slowko
@@ -691,7 +691,7 @@ class Window_fc5(tk.Toplevel):
        # exit button
        self.exit_button = tk.Button(self.master, text='Powrót',
                                     command=self.master.destroy, padx=60)
-       self.exit_button.grid(row=5, column=0, pady=20, sticky=W + E, padx=30)
+       self.exit_button.grid(row=5, column=0, pady=10, sticky=W + E, padx=30)
 
        # funkcje
 
@@ -726,7 +726,7 @@ class Window_fc5(tk.Toplevel):
 
                # update wynik
                self.wynik.pack_forget()
-               self.var_dobrze_zle = "Zle"
+               self.var_dobrze_zle = "Zle - poprawne tlumacznie to:\n{}".format(en)
                self.wynik = tk.Label(self.frame3, text=self.var_dobrze_zle)
                self.wynik.pack()
                # update slowko

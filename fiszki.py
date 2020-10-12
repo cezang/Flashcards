@@ -163,8 +163,8 @@ class Window_afc(tk.Toplevel):
        global dt1
        if self.slowko_state == "PL":
 
-           slowko_1 = self.slowko.get().strip()
-           self.f_slowo = slowko_1[22:]
+           slowko_1 = self.slowko.get()
+           self.f_slowo = slowko_1[22:].strip()
 
            if len(self.f_slowo)==0:
                messagebox.showwarning(title="Uwaga",
@@ -175,9 +175,9 @@ class Window_afc(tk.Toplevel):
            self.slowko.delete(0, tk.END)
            self.slowko.insert(0, "Podaj angielskie słówko: ")
        elif self.slowko_state == "EN":
-           slowko_2 = self.slowko.get().strip()
+           slowko_2 = self.slowko.get()
            self.slowko.delete(0, tk.END)
-           self.s_slowo = slowko_2[25:]
+           self.s_slowo = slowko_2[25:].strip()
            if len(self.s_slowo)==0:
                messagebox.showwarning(title="Uwaga",
                                       message="Wprowadzono błędne słowo")
